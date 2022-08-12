@@ -1,45 +1,39 @@
-import { SummaryContainer, SummaryCard} from "./styles";
-import { ArrowCircleUp, ArrowCircleDown, CurrencyDollar } from 'phosphor-react';
-import { priceFormatter } from "../../utils/formatter";
-import { useSummary } from "../../hooks/useSummary";
+import { SummaryContainer, SummaryCard } from './styles'
+import { ArrowCircleUp, ArrowCircleDown, CurrencyDollar } from 'phosphor-react'
+import { priceFormatter } from '../../utils/formatter'
+import { useSummary } from '../../hooks/useSummary'
 
 export function Summary() {
-    const summary = useSummary()
-    
-    return (
-        <SummaryContainer>
-            <SummaryCard>
-                <header>
-                    <span>
-                        Entradas
-                    </span>
-                    <ArrowCircleUp size={32} color='#00b37e' />
-                </header>
+  const summary = useSummary()
 
-                <strong>{priceFormatter.format(summary.income)}</strong>
-            </SummaryCard>
+  return (
+    <SummaryContainer>
+      <SummaryCard>
+        <header>
+          <span>Entradas</span>
+          <ArrowCircleUp size={32} color="#00b37e" />
+        </header>
 
-            <SummaryCard>
-                <header>
-                    <span>
-                        Saídas
-                    </span>
-                    <ArrowCircleDown size={32} color='#f75a68' />
-                </header>
+        <strong>{priceFormatter.format(summary.income)}</strong>
+      </SummaryCard>
 
-                <strong>{'- ' + priceFormatter.format(summary.outcome)}</strong>
-            </SummaryCard>
+      <SummaryCard>
+        <header>
+          <span>Saídas</span>
+          <ArrowCircleDown size={32} color="#f75a68" />
+        </header>
 
-            <SummaryCard variant="green">
-                <header>
-                    <span>
-                        Total
-                    </span>
-                    <CurrencyDollar size={32} color='#ffffff' />
-                </header>
+        <strong>{'- ' + priceFormatter.format(summary.outcome)}</strong>
+      </SummaryCard>
 
-                <strong>{priceFormatter.format(summary.total)}</strong>
-            </SummaryCard>
-        </SummaryContainer>
-    )
+      <SummaryCard variant="green">
+        <header>
+          <span>Total</span>
+          <CurrencyDollar size={32} color="#ffffff" />
+        </header>
+
+        <strong>{priceFormatter.format(summary.total)}</strong>
+      </SummaryCard>
+    </SummaryContainer>
+  )
 }
