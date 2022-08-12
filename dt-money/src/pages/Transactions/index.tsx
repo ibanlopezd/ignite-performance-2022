@@ -18,7 +18,7 @@ export function Transactions() {
                 <TransactionsTable>
                     <tbody>
                         {transactions.length > 0 ? (
-                            transactions.map( transaction => (
+                            transactions.reverse().map( transaction => (
                                 <tr key={transaction.id}>
                                     <td width='40%'>{transaction.description}</td>
                                     <td>
