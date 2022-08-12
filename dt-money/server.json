@@ -1,36 +1,60 @@
 {
-    "transactions": [
-        {
-            "id": 1,
-            "description": "Desenvolvimento Site",
-            "type": "income",
-            "category": "Venda",
-            "price": 14000,
-            "createdAt": "2022-08-12T14:45:01.757Z"
-        },
-        {
-            "id": 2,
-            "description": "Hamburger",
-            "type": "outcome",
-            "category": "Alimentação",
-            "price": 50,
-            "createdAt": "2022-08-09T14:45:01.757Z"
-        },
-        {
-            "id": 3,
-            "description": "Pizza Rodizio",
-            "type": "outcome",
-            "category": "Alimentação",
-            "price": 150,
-            "createdAt": "2022-08-14T14:45:01.757Z"
-        },
-        {
-            "id": 4,
-            "description": "Laptop Gaming",
-            "type": "outcome",
-            "category": "Tecnología",
-            "price": 8000,
-            "createdAt": "2022-08-19T14:45:01.757Z"
-        }
-    ]
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento Site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2022-08-12T14:45:01.757Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburger",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 50,
+      "createdAt": "2022-08-09T14:45:01.757Z"
+    },
+    {
+      "id": 3,
+      "description": "Pizza Rodizio",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 150,
+      "createdAt": "2022-08-14T14:45:01.757Z"
+    },
+    {
+      "id": 4,
+      "description": "Laptop Gaming",
+      "type": "outcome",
+      "category": "Tecnología",
+      "price": 8000,
+      "createdAt": "2022-08-19T14:45:01.757Z"
+    },
+    {
+      "description": "Rendimiento Investimento",
+      "category": "Investimento",
+      "type": "income",
+      "price": 500,
+      "createdAt": "2022-08-12T19:00:30.160Z",
+      "id": 5
+    },
+    {
+      "description": "Aluguel",
+      "category": "Apartamento",
+      "type": "outcome",
+      "price": 2500,
+      "createdAt": "2022-08-12T19:12:06.280Z",
+      "id": 6
+    },
+    {
+      "description": "Loteria",
+      "category": "Premios",
+      "type": "income",
+      "price": 5000,
+      "createdAt": "2022-08-12T19:13:15.914Z",
+      "id": 7
+    }
+  ]
 }
